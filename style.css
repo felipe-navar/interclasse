@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body{
+    background-color: #FEFCFB;
+}
+
+h1{
+    color: #C2E812;
+}
+
+div:hover > h1{
+    background-image: linear-gradient(to right, #D32D05, #D40A08, #380100);
+    color: #FEFCFB;
+}
+
+div > h1::after{
+    content: ' (Linguagem de Marcação de HiperTexto)';
+    font-size: 0.7em;
+    color: white;
+}
+
+div:hover > h1::after{
+    color: black;
+}
+
+div > h1::before{
+    content: url(favicon.png) ' ';
+}
+
+.principal{
+    background-color: #5c6e07;
+}
+
+.site{
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color:#76F7BF;
+}
+
+.basico{
+    color: #545E75;
+}
+
+.medio{
+    color: #3F826D;
+}
+
+.avancado{
+    color: #C03221;
+}
+
+#curso{
+    text-align: justify;
+    background-color: #545E75;
+}
+
+#curso:hover{
+    background-image: linear-gradient(to left, #040F1A,#0B2C4D,#134980,#1B67B3,#2284E6);
+    color: black;
+}
+
+#curso::after{
+    content: ' (Folhas de estilo em cascata)';
+    font-size: 0.7em;
+    color: black;   
+    
+}
+
+#curso::before{
+    content: url(css.png) ' ';
+    
+}
+
+#curso:hover::after{
+    color: #FEFCFB;
+}
